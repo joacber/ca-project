@@ -48,7 +48,7 @@ jobs:
       - checkout
       - add_ssh_keys:
          fingerprints:
-          - "b6:6c:92:21:85:88:1e:95:3a:10:81:3a:dc:22:52:21"
+          - "d9:84:c9:f4:be:20:d9:be:c5:78:d3:c4:6c:db:4e:f7"
       - run: apk add openssh
       - run:
           name: Deploy Over SSH
