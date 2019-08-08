@@ -1,4 +1,4 @@
-version: 2
+version: 2.0
 jobs:
   test:
     docker:
@@ -39,7 +39,7 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
- package:
+  package:
     docker:
       - image: circleci/alpine:latest
 
