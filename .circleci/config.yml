@@ -50,7 +50,7 @@ jobs:
          fingerprints:
           - "29:4a:48:09:58:25:8a:eb:f1:e7:07:5c:c5:a6:65:b1"
       - run: apk add openssh
-      - run ssh-keyscan 34.77.143.146 >> ~/.ssh/known_hosts
+      - run: ssh-keyscan -H 34.77.143.146 >> ~/.ssh/known_hosts
       - run:
           name: Deploy Over SSH
           command: |
