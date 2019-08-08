@@ -49,7 +49,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh ubuntu@34.77.143.146 "./~/code/ca-project/compose.sh"
+            ssh ubuntu@34.77.143.146 "~/code/ca-project/compose.sh"
 
 workflows:
   version: 2
