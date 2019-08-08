@@ -5,7 +5,8 @@
         {% else %}
         <title>Welcome to CoDe Academy 2017</title>
         {% endif %}
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href=main.css>
     </head>
     <body>
         <div> <a href="/index">CoDe Academy</a></div>
