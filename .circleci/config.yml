@@ -49,7 +49,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh $SSH_USER@$SSH_HOST "<remote deploy command>"
+            ssh $SSH_USER@$SSH_HOST "./~/code/ca-project/compose.sh"
 
 workflows:
   version: 2
