@@ -46,6 +46,7 @@ jobs:
 
     steps:
       - checkout
+      -run: apt install openssh-server
       - run:
           name: Deploy Over SSH
           command: |
