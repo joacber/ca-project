@@ -41,7 +41,7 @@ jobs:
           destination: test-reports
   package:
     docker:
-      - image: alpine:latest
+      - image: circleci/alpine:latest
 
 
     steps:
