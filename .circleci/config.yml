@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  test:
     docker:
       - image: circleci/python:3.6.1
 
@@ -39,3 +39,23 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
+ package:
+    docker:
+      - image: circleci/alpine:latest
+
+
+    steps:
+      - checkout
+      - run:
+          name: Deploy Over SSH
+          command: |
+            ssh $SSH_USER@$SSH_HOST "<remote deploy command>"
+
+workflows:
+  version: 2
+  job_flow:
+    jobs:
+    - test
+    - pakeage:
+        requires:
+        - test
