@@ -46,7 +46,7 @@ jobs:
 
     steps:
       - checkout
-      - run: apt install openssh-server
+      - run: apk add openssh
       - run:
           name: Deploy Over SSH
           command: |
