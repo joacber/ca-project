@@ -5,5 +5,5 @@ services:
   codechan-container:
     image: codechan
     ports:
-      - 5000:8000
+      - 80:5000
     
