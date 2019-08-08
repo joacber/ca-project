@@ -39,7 +39,7 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
- build:
+ package:
     docker:
       - image: circleci/alpine:latest
 
@@ -55,7 +55,7 @@ workflows:
   version: 2
   job_flow:
     jobs:
-    - tests
-    - build:
+    - test
+    - pakeage:
         requires:
-        - tests
+        - test
