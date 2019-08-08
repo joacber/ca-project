@@ -1,9 +1,8 @@
 #! /bin/bash
 
-#Do we need to update or install anything?
-#sudo apt-get update
 
-
+#navigate to location
+cd ~/code/ca-project/
 
 # down
 docker-compose down
